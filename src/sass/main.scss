@@ -1,4 +1,5 @@
-@import 'helpers/variables', 'helpers/mixins';
-@import 'base/base', 'base/fonts';
-@import 'layout/header', 'layout/footer';
-@import 'pages/homepage';
+@import "helpers/variables", "helpers/mixins";
+@import "base/base", "base/fonts";
+@import "layout/header", "layout/footer";
+@import "pages/homepage";
+@import "components/hero", "components/welcomeBonus", "components/heroForm", "components/dropdown";

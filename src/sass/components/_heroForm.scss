@@ -1,0 +1,21 @@
+.heroForm-inputs {
+  display: flex;
+
+  &--dropdown:not(:last-child) {
+    margin-right: 8px;
+  }
+}
+.heroForm-button {
+  width: 100%;
+  height: 53px;
+  text-align: center;
+  margin-top: 12px;
+  background-image: url(../../images/yellowbutton.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: transparent;
+  color: $main-text;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 140%;
+}

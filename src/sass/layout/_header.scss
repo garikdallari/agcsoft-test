@@ -2,6 +2,7 @@
     text-align: left;
     &-content {
         display: flex;
+        align-items: flex-end;
     }
     &-item {
         margin-right: 8px;

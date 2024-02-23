@@ -20,6 +20,10 @@ a {
   text-decoration: none;
   color: inherit;
 }
+button {
+  border: 0;
+  font-family: inherit;
+}
 .App .container {
   background-color: $main-bg;
   width: 100%;

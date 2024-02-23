@@ -1,0 +1,17 @@
+.hero {
+  width: 100%;
+  background: linear-gradient(#faff00, #be2929);
+  margin-top: 20px;
+  border-radius: 10px;
+  padding: 10px 16.5px 25px;
+
+  &-title {
+    color: $main-text;
+    font-family: "AA BadaBoom BB";
+    text-align: center;
+    font-size: 30px;
+    line-height: 100%;
+    letter-spacing: 1.8px;
+    margin-bottom: 12px;
+  }
+}

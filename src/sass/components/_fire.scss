@@ -1,0 +1,10 @@
+.fireWrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: -5px;
+
+  & img {
+    width: 96%;
+    display: block;
+  }
+}

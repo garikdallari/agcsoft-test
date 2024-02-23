@@ -1,14 +1,14 @@
-import React from 'react';
+import React from "react";
 import Header from "../../components/Header";
-import Hero from '../../components/Hero';
+import Hero from "../../components/Hero";
 
 const Homepage = () => {
   return (
-    <div className='homepage'>
+    <div className="homepage">
       <Header />
       <Hero />
     </div>
-  )
-}
+  );
+};
 
-export default Homepage
+export default Homepage;

@@ -1,3 +1,6 @@
+.heroForm {
+  margin-top: 12px;
+}
 .heroForm-inputs {
   display: flex;
 
@@ -18,4 +21,9 @@
   font-size: 14px;
   font-weight: 700;
   line-height: 140%;
+  cursor: pointer;
+
+  &:hover {
+    background-image: url(../../images/buttonHover.png);
+  }
 }

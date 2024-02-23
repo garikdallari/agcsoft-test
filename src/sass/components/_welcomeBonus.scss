@@ -1,12 +1,21 @@
 .welcomeBonus {
   display: flex;
-  // background: linear-gradient(263deg, #dd1f41 -2.11%, #6a0c1d 100%);
-  background-image: url(../../images/welcomeBonus/welcomeBonusBg.png);
   background-repeat: no-repeat;
   background-size: contain;
   padding: 16px 20px 16px 8px;
   border-radius: 10px;
-  margin-bottom: 12px;
+  margin-bottom: 4px;
+  cursor: pointer;
+
+  &.red {
+    background-image: url(../../images/welcomeBonus/welcomeBonusBgRed.png);
+  }
+  &.purple {
+    background-image: url(../../images/welcomeBonus/welcomeBonusBgPurple.png);
+  }
+  &.blue {
+    background-image: url(../../images/welcomeBonus/welcomeBonusBgBlue.png);
+  }
 
   &-textContent {
     margin-left: 13px;
@@ -21,12 +30,25 @@
   }
 
   &-actions {
-    display: flex;
-    align-items: center;
+    @include flex-center;
     margin-left: auto;
+
+    & div {
+      @include flex-center;
+    }
 
     &--arrow {
       margin-left: 15px;
     }
+
+    &--radio {
+      width: 20px;
+      height: 20px;
+      background-image: url(../../images/welcomeBonus/Radio.png);
+      background-repeat: no-repeat;
+    }
   }
+}
+.welcomeBonus.checked .welcomeBonus-actions--radio {
+  background-image: url(../../images/welcomeBonus/check-circle.png);
 }

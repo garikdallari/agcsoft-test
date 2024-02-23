@@ -1,0 +1,12 @@
+.header {
+    text-align: left;
+    &-content {
+        display: flex;
+    }
+    &-item {
+        margin-right: 8px;
+        &--search {
+            cursor: pointer;
+        }
+    }
+}

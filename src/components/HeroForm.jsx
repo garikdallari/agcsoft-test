@@ -11,7 +11,7 @@ const HeroForm = ({ handleSubmit }) => {
   return (
     <div>
       <form className="heroForm" onSubmit={handleSubmit}>
-        <div className="heroForm-inputs">
+        <div className="heroForm__inputs">
           <Dropdown
             selected={selectedCountry}
             isOtherDropdownActive={currencyDropDownActive}
@@ -31,8 +31,8 @@ const HeroForm = ({ handleSubmit }) => {
             defaultValue="EUR"
           />
         </div>
-        <button className="heroForm-button" type="submit">
-          <span>Start with your 100% bonus</span>
+        <button className="heroForm__button" type="submit">
+          <span className="heroForm__button--text">Start with your 100% bonus</span>
         </button>
       </form>
     </div>

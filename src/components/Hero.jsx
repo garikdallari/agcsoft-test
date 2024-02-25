@@ -17,7 +17,7 @@ const Hero = () => {
     <>
       <Fire />
       <div className="hero">
-        <div className="hero-title">
+        <div className="hero__title">
           <h4>DEPOSIT AND PLAY</h4>
         </div>
         {!submitted ? (

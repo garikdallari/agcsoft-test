@@ -11,26 +11,26 @@ const Dropdown = ({
   defaultValue,
 }) => {
   return (
-    <div className="heroForm-inputs--dropdown dropdown">
+    <div className="heroForm__inputs--dropdown dropdown">
       <div
-        className={`dropdown-btn  ${isActive ? "active" : ""}`}
+        className={`dropdown__btn  ${isActive ? "active" : ""}`}
         onClick={(e) => {
           if (!isOtherDropdownActive) {
             setIsActive(!isActive);
           }
         }}
       >
-        <span className="dropdown-btn--value">{selected || defaultValue}</span>
-        <span className={`dropdown-btn--arrow ${isActive ? "rotate" : ""}`}>
-          <img src={down} alt="arrowdown" />
+        <span className="dropdown__btn--value">{selected || defaultValue}</span>
+        <span className={`dropdown__btn--arrow ${isActive ? "rotate" : ""}`}>
+          <img className="dropdown__btn--arrow--img" src={down} alt="arrowdown" />
         </span>
       </div>
       {isActive && (
-        <div className="dropdown-content">
+        <div className="dropdown__content">
           {data.map((el) => (
             <div
               key={el.value + Math.random()}
-              className="dropdown-content--item"
+              className="dropdown__content--item"
               onClick={() => {
                 setSelected(el.value);
                 setIsActive(false);

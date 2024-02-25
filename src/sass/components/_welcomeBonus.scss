@@ -13,34 +13,35 @@
 
   &.red {
     // background-image: url(../../images/welcomeBonus/welcomeBonusBgRed.png);
-    background: linear-gradient(263deg, #DD1F41 -2.11%, #6A0C1D 100%);
+    background: linear-gradient(263deg, #dd1f41 -2.11%, #6a0c1d 100%);
   }
   &.purple {
     // background-image: url(../../images/welcomeBonus/welcomeBonusBgPurple.png);
-    background: linear-gradient(256deg, #440079 -15.3%, #7B0260 61.75%);
+    background: linear-gradient(256deg, #440079 -15.3%, #7b0260 61.75%);
   }
   &.blue {
     // background-image: url(../../images/welcomeBonus/welcomeBonusBgBlue.png);
-    background: linear-gradient(256deg, #006379 -15.3%, #3E027B 61.75%);
+    background: linear-gradient(256deg, #006379 -15.3%, #3e027b 61.75%);
   }
 
-  &-textContent {
+  &__textContent {
     margin-left: 13px;
     color: $text-yellow;
     font-size: 14px;
     font-style: normal;
     font-weight: 700;
     line-height: 140%;
-    &--title {
+
+    &--item--highlighted {
       color: $text-white;
     }
   }
 
-  &-actions {
+  &__actions {
     @include flex-center;
     margin-left: auto;
 
-    & div {
+    &--wrapper {
       @include flex-center;
     }
 
@@ -55,7 +56,7 @@
       background-repeat: no-repeat;
     }
   }
-  &.checked .welcomeBonus-actions--radio {
+  &.checked .welcomeBonus__actions--radio {
     background-image: url(../../images/welcomeBonus/check-circle.png);
   }
 }

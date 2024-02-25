@@ -7,7 +7,7 @@ import tournamentsImg from "../images/navItem/Group7356.png";
 
 const HomepageNav = () => {
   return (
-    <div className="homepagenav">
+    <div className="homepageNav">
       <NavItem image={gameSlotsImg} bgColor="#4D583B" text="Game slots" />
       <NavItem image={liveCasinoImg} bgColor="#783D3D" text="Live casino" />
       <NavItem

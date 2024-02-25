@@ -1,11 +1,11 @@
 .header {
     text-align: left;
     margin-bottom: 15px;
-    &-content {
+    &__content {
         display: flex;
         align-items: flex-end;
     }
-    &-item {
+    &__item {
         margin-right: 8px;
         &--search {
             cursor: pointer;

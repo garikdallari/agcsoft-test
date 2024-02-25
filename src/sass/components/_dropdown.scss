@@ -5,7 +5,7 @@
   font-weight: 400;
   line-height: 140%;
 
-  &-btn {
+  &__btn {
     padding: 20px;
     border-radius: 111px;
     border: 2px solid #fff;
@@ -30,7 +30,7 @@
     }
   }
 
-  &-content {
+  &__content {
     position: absolute;
     top: 105%;
     left: 0;

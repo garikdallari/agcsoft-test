@@ -6,15 +6,15 @@ import seacrh from "../images/header/search.png";
 const Header = () => {
   return (
     <div className="header">
-      <div className="header-content">
-        <a href="/" className="header-item">
-          <img src={logo} alt="logo" />
+      <div className="header__content">
+        <a href="/" className="header__item">
+          <img className="header__item--img" src={logo} alt="logo" />
         </a>
-        <div className="header-item">
-          <img src={title} alt="header-title" />
+        <div className="header__item">
+          <img src={title} alt="header__title" />
         </div>
-        <div className="header-item header-item--search">
-          <img src={seacrh} alt="search" />
+        <div className="header__item header__item--search">
+          <img className="header__item--search--img" src={seacrh} alt="search" />
         </div>
       </div>
     </div>

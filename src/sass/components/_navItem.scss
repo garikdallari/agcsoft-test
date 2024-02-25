@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   padding-right: 10px;
-  &-logo {
+  &__logo {
     position: relative;
     background-image: url(../../images/navItem/navitemBg.png);
     background-repeat: no-repeat;
@@ -12,11 +12,10 @@
     width: 60px;
     @include flex-center;
   }
-  &-text {
+  &__content {
     color: $text-white;
     font-size: 14px;
     font-weight: 700;
     line-height: 140%;
   }
-
 }

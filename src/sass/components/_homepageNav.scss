@@ -3,4 +3,6 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 9px;
+    position: relative;
+    z-index: 99;
 }

@@ -32,7 +32,7 @@ const HeroForm = ({ handleSubmit }) => {
           />
         </div>
         <button className="heroForm-button" type="submit">
-          Start with your 100% bonus
+          <span>Start with your 100% bonus</span>
         </button>
       </form>
     </div>

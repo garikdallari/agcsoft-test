@@ -1,0 +1,21 @@
+.navItem {
+  border-radius: 6px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  &-logo {
+    position: relative;
+    background-image: url(../../images/navItem/navitemBg.png);
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 60px;
+    @include flex-center;
+  }
+  &-text {
+    color: $text-white;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 140%;
+  }
+
+}

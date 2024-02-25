@@ -13,10 +13,11 @@ const CurrencyDropdown = ({
   return (
     <div className="heroForm-inputs--dropdown dropdown">
       <div
-        className="dropdown-btn"
+        className={`dropdown-btn  ${isActive ? "active" : ""}`}
         onClick={(e) => {
           if (!isOtherDropdownActive) {
             setIsActive(!isActive);
+            setSelected("");
           }
         }}
       >

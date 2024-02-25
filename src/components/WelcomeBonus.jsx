@@ -3,6 +3,7 @@ import line from "../images/welcomeBonus/line.png";
 import arrow from "../images/welcomeBonus/arrow.png";
 
 const WelcomeBonus = ({ image, line1, line2, line3, className, type }) => {
+
   const handleClick = (e) => {
     if (type === "arrow") return;
     const elements = document.querySelectorAll(".welcomeBonus");

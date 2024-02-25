@@ -48,7 +48,7 @@
       background-repeat: no-repeat;
     }
   }
-}
-.welcomeBonus.checked .welcomeBonus-actions--radio {
-  background-image: url(../../images/welcomeBonus/check-circle.png);
+  &.checked .welcomeBonus-actions--radio {
+    background-image: url(../../images/welcomeBonus/check-circle.png);
+  }
 }

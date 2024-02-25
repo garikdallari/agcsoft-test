@@ -1,13 +1,14 @@
 import React from "react";
 import down from "../images/down.png";
-import { countries } from "../utils";
 
-const CountryDropdown = ({
+const Dropdown = ({
   selected,
   setSelected,
   isActive,
   setIsActive,
   isOtherDropdownActive,
+  data,
+  defaultValue,
 }) => {
   return (
     <div className="heroForm-inputs--dropdown dropdown">
@@ -19,23 +20,23 @@ const CountryDropdown = ({
           }
         }}
       >
-        {selected || "Country"}
+        <span className="dropdown-btn--value">{selected || defaultValue}</span>
         <span className={`dropdown-btn--arrow ${isActive ? "rotate" : ""}`}>
           <img src={down} alt="arrowdown" />
         </span>
       </div>
       {isActive && (
         <div className="dropdown-content">
-          {countries.map((country) => (
+          {data.map((el) => (
             <div
-              key={country}
+              key={el.value + Math.random()}
               className="dropdown-content--item"
               onClick={() => {
-                setSelected(country);
+                setSelected(el.value);
                 setIsActive(false);
               }}
             >
-              {country}
+              {el.name}
             </div>
           ))}
         </div>
@@ -44,4 +45,4 @@ const CountryDropdown = ({
   );
 };
 
-export default CountryDropdown;
+export default Dropdown;

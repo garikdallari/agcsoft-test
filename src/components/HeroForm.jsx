@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import CountryDropdown from "./CountryDropdown";
-import CurrencyDropdown from "./CurrencyDropdown";
+import Dropdown from "./Dropdown";
+import { countries, currencies } from "../utils";
 
 const HeroForm = ({ handleSubmit }) => {
   const [selectedCountry, setSelectedCountry] = useState("");
@@ -12,19 +12,23 @@ const HeroForm = ({ handleSubmit }) => {
     <div>
       <form className="heroForm" onSubmit={handleSubmit}>
         <div className="heroForm-inputs">
-          <CountryDropdown
+          <Dropdown
             selected={selectedCountry}
             isOtherDropdownActive={currencyDropDownActive}
             setSelected={setSelectedCountry}
             isActive={countryDropDownActive}
             setIsActive={setCountryDropdownActive}
+            data={countries}
+            defaultValue="Country"
           />
-          <CurrencyDropdown
+          <Dropdown
             selected={selectedCurrency}
             isOtherDropdownActive={countryDropDownActive}
             setSelected={setSelectedCurrency}
             isActive={currencyDropDownActive}
             setIsActive={setCurrencyDropdownActive}
+            data={currencies}
+            defaultValue="EUR"
           />
         </div>
         <button className="heroForm-button" type="submit">

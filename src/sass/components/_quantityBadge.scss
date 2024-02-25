@@ -1,0 +1,15 @@
+.quantityBadge {
+  text-align: center;
+  background-color: $badge-bg-color;
+  padding: 3px 4px;
+  border-radius: 50%;
+  color: #fffaf3;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}

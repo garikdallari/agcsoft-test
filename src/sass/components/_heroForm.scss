@@ -21,13 +21,19 @@
     font-weight: 700;
     line-height: 140%;
     cursor: pointer;
-    background-color: transparent;
-    background-image: url(../../images/yellowbutton.png);
-    background-repeat: no-repeat;
-    background-position:  center;
-    background-size: contain;
+    clip-path: polygon(0 0, 100% 0, 96% 100%, 4% 100%);
+    background-color: #FCC211;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    // background-color: transparent;
+    // background-image: url(../../images/yellowbutton.png);
+    // background-repeat: no-repeat;
+    // background-position:  center;
+    // background-size: contain;
     &:hover {
-      background-image: url(../../images/buttonHover.png);
+      // background-image: url(../../images/buttonHover.png);
     }
   }
 }

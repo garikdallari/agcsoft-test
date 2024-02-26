@@ -49,14 +49,16 @@
       margin-left: 15px;
     }
 
-    &--radio {
+    &--checkbox {
+      cursor: pointer;
+      -webkit-appearance: none;
       width: 20px;
       height: 20px;
       background-image: url(../../images/welcomeBonus/Radio.png);
       background-repeat: no-repeat;
     }
-  }
-  &.checked .welcomeBonus__actions--radio {
-    background-image: url(../../images/welcomeBonus/check-circle.png);
+    &--checkbox:checked {
+      background-image: url(../../images/welcomeBonus/check-circle.png);
+    }
   }
 }

@@ -2,22 +2,20 @@ import React from "react";
 import line from "../images/welcomeBonus/line.png";
 import arrow from "../images/welcomeBonus/arrow.png";
 
-const WelcomeBonus = ({ image, line1, line2, line3, className, type }) => {
-  const handleClick = (e) => {
-    if (type === "arrow") return;
-    const elements = document.querySelectorAll(".welcomeBonus");
-    elements.forEach((el) => {
-      if (el.classList.contains("checked")) {
-        el.classList.remove("checked");
-      }
-    });
-
-    e.currentTarget.classList.add("checked");
-  };
+const WelcomeBonus = ({
+  image,
+  line1,
+  line2,
+  line3,
+  className,
+  type,
+  checked,
+  onClick,
+}) => {
   return (
-    <div className={`welcomeBonus ${className}`} onClick={handleClick}>
+    <div className={`welcomeBonus ${className}`} onClick={onClick}>
       <div className="welcomeBonus__image">
-        <img src={image} alt="treeasure" />
+        <img src={image} alt="treasure" />
       </div>
       <div className="welcomeBonus__textContent">
         <p className="welcomeBonus__textContent--item welcomeBonus__textContent--item--highlighted">
@@ -37,7 +35,12 @@ const WelcomeBonus = ({ image, line1, line2, line3, className, type }) => {
             </div>
           </div>
         ) : (
-          <div className="welcomeBonus__actions--radio"></div>
+          <input
+            className="welcomeBonus__actions--checkbox"
+            type="checkbox"
+            readOnly={true}
+            checked={checked}
+          />
         )}
       </div>
     </div>

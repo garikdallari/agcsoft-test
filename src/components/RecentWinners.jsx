@@ -50,6 +50,34 @@ const RecentWinners = () => {
               <img src={recentWinImg} alt="recentwin" />
             </div>
           </div>
+          <div className="recentWinners__element">
+            <div className="recentWinners__element--text">
+              <p className="">Robert - €18.75</p>
+              <p className="">
+                in{" "}
+                <span className="recentWinners__element--text--highlighted">
+                  Crystal Fruits
+                </span>
+              </p>
+            </div>
+            <div className="recentWinners__element--image">
+              <img src={recentWinImg} alt="recentwin" />
+            </div>
+          </div>
+          <div className="recentWinners__element">
+            <div className="recentWinners__element--text">
+              <p className="">Robert - €18.75</p>
+              <p className="">
+                in{" "}
+                <span className="recentWinners__element--text--highlighted">
+                  Crystal Fruits
+                </span>
+              </p>
+            </div>
+            <div className="recentWinners__element--image">
+              <img src={recentWinImg} alt="recentwin" />
+            </div>
+          </div>
         </div>
       </div>
       <div className="recentWinners__bottomBg">

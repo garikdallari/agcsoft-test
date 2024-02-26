@@ -1,21 +1,25 @@
+.homepage.menuopen .footer {
+  margin-left: -16px;
+  margin-right: -16px;
+  padding: 0 16px 8px;
+  background: linear-gradient(180deg, rgba(5, 7, 26, 0.00) 0%, #111323 63.54%);
+}
 .footer {
   margin-top: auto;
   &__wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-gap: 10px;
 
     &--action {
       @include flex-center;
-      width: 37%;
     }
     &--action--menu {
       position: relative;
-      width: 26%;
 
       &--fire {
         position: absolute;
-        top: -31px;
+        top: -1.7rem;
       }
     }
   }
@@ -53,9 +57,8 @@
       background: linear-gradient(180deg, #fff1bd 0%, #ffcdb0 100%), #ffc7c7;
       border: 6px solid #e11717;
       border-radius: 50%;
-      width: 53px;
-      height: 53px;
-      transform: scale(1.2);
+      height: auto;
+      aspect-ratio: 1/1;
       position: relative;
     }
   }

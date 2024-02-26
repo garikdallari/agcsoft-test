@@ -1,3 +1,56 @@
 .menu {
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
 
+    &--actions {
+      @include flex-center;
+
+      &--messages {
+        position: relative;
+        margin-right: 25px;
+      }
+      &--language--wrapper {
+        @include flex-center;
+      }
+
+      &--language--flag {
+        margin-right: 6px;
+      }
+    }
+  }
+
+  &__auth {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 20px;
+    padding-right: 20px;
+    margin-bottom: 20px;
+
+    &--register--button {
+      font-size: 12.397px !important;
+    }
+
+    &--login--button {
+      font-size: 12.397px !important;
+    }
+  }
+  &__list {
+    position: relative;
+    margin-top: 16px;
+    margin-right: -16px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url(../../images/menu/Group8103.png);
+      background-repeat: no-repeat;
+      width: 307px;
+      height: 440px;
+      bottom: 3.5rem;
+      right: -6rem;
+    }
+  }
 }

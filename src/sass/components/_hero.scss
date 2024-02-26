@@ -1,16 +1,19 @@
 .hero {
-  width: 100%;
-  background: linear-gradient(181deg, #EAC80B 2.6%, #BE2929 60.69%), #F00;
-  border-radius: 10px;
-  padding: 10px 16.5px 25px;
+  margin-top: 15px;
+  &__wrapper {
+    width: 100%;
+    background: linear-gradient(181deg, #eac80b 2.6%, #be2929 60.69%), #f00;
+    border-radius: 10px;
+    padding: 10px 16.5px 25px;
 
-  &__title {
-    color: $main-text;
-    font-family: "AA BadaBoom BB";
-    text-align: center;
-    font-size: 30px;
-    line-height: 100%;
-    letter-spacing: 1.8px;
-    margin-bottom: 12px;
+    &__title {
+      color: $main-text;
+      font-family: "AA BadaBoom BB";
+      text-align: center;
+      font-size: 30px;
+      line-height: 100%;
+      letter-spacing: 1.8px;
+      margin-bottom: 12px;
+    }
   }
 }

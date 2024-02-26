@@ -2,7 +2,7 @@
   margin-left: -16px;
   margin-right: -16px;
   padding: 0 16px 8px;
-  background: linear-gradient(180deg, rgba(5, 7, 26, 0.00) 0%, #111323 63.54%);
+  background: linear-gradient(180deg, rgba(5, 7, 26, 0) 0%, #111323 63.54%);
 }
 .footer {
   margin-top: auto;
@@ -14,6 +14,11 @@
     &--action {
       @include flex-center;
     }
+
+    // &--action--signup {
+    //   filter: drop-shadow(0px 0px 24px rgba(255, 77, 0, 0.87));
+    // }
+
     &--action--menu {
       position: relative;
 
@@ -24,42 +29,19 @@
     }
   }
 
-  &__button {
+  &__button--menu {
+    @include flex-center;
     width: 100%;
-    height: 45px;
-    background-color: transparent;
-    color: $text-white;
     text-align: center;
     font-size: 14px;
     font-weight: 700;
     line-height: 140%;
     cursor: pointer;
-
-    &--signin {
-      clip-path: polygon(4% 0, 96% 0, 100% 100%, 0 100%);
-      background-color: rgba(79, 92, 105, 0.77);
-      border-top-right-radius: 15px;
-      border-top-left-radius: 15px;
-      border-bottom-left-radius: 10px;
-      border-bottom-right-radius: 10px;
-    }
-    &--signup {
-      color: $main-text;
-      clip-path: polygon(0 0, 100% 0, 96% 100%, 4% 100%);
-      background-color: #fcc211;
-      border-top-right-radius: 10px;
-      border-top-left-radius: 10px;
-      border-bottom-left-radius: 15px;
-      border-bottom-right-radius: 15px;
-    }
-    &--menu {
-      @include flex-center;
-      background: linear-gradient(180deg, #fff1bd 0%, #ffcdb0 100%), #ffc7c7;
-      border: 6px solid #e11717;
-      border-radius: 50%;
-      height: auto;
-      aspect-ratio: 1/1;
-      position: relative;
-    }
+    background: linear-gradient(180deg, #fff1bd 0%, #ffcdb0 100%), #ffc7c7;
+    border: 6px solid #e11717;
+    border-radius: 50%;
+    height: auto;
+    aspect-ratio: 1/1;
+    position: relative;
   }
 }

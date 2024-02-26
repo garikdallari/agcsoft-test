@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import Dropdown from "./Dropdown";
+import Button from "./Button";
+import formBtnBg from "../images/buttonBgs/yellowBtn.png";
 import { countries, currencies } from "../utils";
 
 const HeroForm = ({ handleSubmit }) => {
@@ -31,9 +33,12 @@ const HeroForm = ({ handleSubmit }) => {
             defaultValue="EUR"
           />
         </div>
-        <button className="heroForm__button" type="submit">
-          <span className="heroForm__button--text">Start with your 100% bonus</span>
-        </button>
+        <Button
+          text="Start with your 100% bonus"
+          className="heroForm__button"
+          bgImg={formBtnBg}
+          type="submit"
+        />
       </form>
     </div>
   );

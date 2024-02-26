@@ -35,12 +35,15 @@ const WelcomeBonus = ({
             </div>
           </div>
         ) : (
-          <input
-            className="welcomeBonus__actions--checkbox"
-            type="checkbox"
-            readOnly={true}
-            checked={checked}
-          />
+          <label for="welcomeBonus">
+            <input
+              className="welcomeBonus__actions--checkbox"
+              type="checkbox"
+              readOnly={true}
+              checked={checked}
+              id="welcomeBonus"
+            />
+          </label>
         )}
       </div>
     </div>

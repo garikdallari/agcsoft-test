@@ -1,3 +1,5 @@
+import { useLayoutEffect, useState } from "react";
+
 export const countries = [
   { name: "Afghanistan", value: "Afghanistan" },
   { name: "Albania", value: "Albania" },
@@ -296,3 +298,28 @@ export const currencies = [
   { name: "Somali Shilling", value: "SOS" },
   { name: "Ghanaian Cedi", value: "GHS" },
 ];
+
+export const menuData = [
+  { title: "Games", icon: "../images/menu/games.svg", badge: "" },
+  { title: "Promotions", icon: "../images/menu/promotions.svg", badge: "3" },
+  { title: "Tournaments", icon: "../images/menu/tournaments.svg", badge: "" },
+  { title: "Live dealers", icon: "../images/menu/live-dealers.svg", badge: "" },
+  { title: "Lottery", icon: "../images/menu/lottery.svg", badge: "" },
+  { title: "Hall of fame", icon: "../images/menu/hall-of-fame.svg", badge: "" },
+  { title: "VIP", icon: "../images/menu/vip.svg", badge: "" },
+  { title: "Payment", icon: "../images/menu/payment.svg", badge: "" },
+  { title: "Support", icon: "../images/menu/support.svg", badge: "" },
+];
+
+export const useWindowHeight = () => {
+  const [height, setHeight] = useState(0);
+  useLayoutEffect(() => {
+    const updateSize = () => {
+      setHeight(window.innerHeight);
+    };
+    window.addEventListener("resize", updateSize);
+    updateSize();
+    return () => window.removeEventListener("resize", updateSize);
+  }, []);
+  return height;
+};

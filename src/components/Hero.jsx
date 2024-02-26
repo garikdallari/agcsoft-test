@@ -13,9 +13,9 @@ const Hero = () => {
     setSubmitted(true);
   };
   return (
-    <>
+    <div className="hero">
       <Fire />
-      <div className={`hero ${submitted ? "hero--submitted" : ""}`}>
+      <div className={`hero__wrapper ${submitted ? "hero--submitted" : ""}`}>
         <div className="hero__title">
           <h4>DEPOSIT AND PLAY</h4>
         </div>
@@ -35,7 +35,7 @@ const Hero = () => {
           <ChooseBonus />
         )}
       </div>
-    </>
+    </div>
   );
 };
 

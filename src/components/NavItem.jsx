@@ -6,7 +6,9 @@ const NavItem = ({ bgColor, text, image, quantity }) => {
     <div className="navItem" style={{ backgroundColor: bgColor }}>
       <div className="navItem__logo">
         <img className="navItem__logo--img" src={image} alt="img" />
-        {quantity && <QuantityBadge quantity={3} />}
+        {quantity && (
+          <QuantityBadge quantity={3} styles={{ top: "5px", right: "10px" }} />
+        )}
       </div>
       <div className="navItem__content">
         <p className="navItem__content--text">{text}</p>

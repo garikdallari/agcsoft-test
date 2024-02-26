@@ -1,0 +1,24 @@
+.button {
+  position: relative;
+  width: 100%;
+  height: 45px;
+  font-size: 14px;
+  font-weight: 700;
+  color: $main-text;
+  line-height: 140%;
+  cursor: pointer;
+  background-color: transparent;
+
+  &__bgImg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__text {
+    position: relative;
+    z-index: 10;
+  }
+}

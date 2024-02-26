@@ -1,0 +1,31 @@
+.menu__list--item {
+  display: flex;
+  align-items: center;
+  padding: 15px 16px;
+  border-radius: 8.855px;
+  background: linear-gradient(
+    90deg,
+    #292a37 2.37%,
+    rgba(39, 40, 48, 0.1) 68.47%,
+    rgba(39, 39, 46, 0) 100%
+  );
+  cursor: pointer;
+
+  &:not(:last-child) {
+    margin-bottom: 4px;
+  }
+
+  &--img {
+    position: relative;
+  }
+
+  &--text {
+    margin-left: 27px;
+    color: $menu-item-text;
+    font-family: Poppins;
+    font-size: 15.939px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+  }
+}

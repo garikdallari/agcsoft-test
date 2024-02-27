@@ -6,10 +6,16 @@
 }
 .footer {
   margin-top: auto;
+
   &__wrapper {
     display: grid;
     grid-template-columns: 2fr 1fr 2fr;
     grid-gap: 10px;
+    @include breakpoint(sm) {
+      margin: auto auto 0;
+      max-width: 458px;
+      margin: 0 auto;
+    }
 
     &--action {
       @include flex-center;

@@ -5,4 +5,12 @@
     grid-gap: 9px;
     position: relative;
     z-index: 99;
+
+    @include breakpoint(sm) {
+        margin: 48px auto 0;
+    }
+
+    @include breakpoint(lg) {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }

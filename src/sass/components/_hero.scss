@@ -1,5 +1,9 @@
 .hero {
   margin-top: 15px;
+
+  @include breakpoint(sm) {
+    margin: 0 auto;
+  }
   &__wrapper {
     width: 100%;
     background: linear-gradient(181deg, #eac80b 2.6%, #be2929 60.69%), #f00;

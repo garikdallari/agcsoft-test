@@ -29,12 +29,24 @@
     padding-right: 20px;
     margin-bottom: 20px;
 
+    @include breakpoint(md) {
+      max-width: 40%;
+      margin: 0 auto;
+      margin-bottom: 15px;
+    }
+
     &--register--button {
       font-size: 12.397px !important;
+      @include breakpoint(md) {
+        font-size: 16px !important;
+      }
     }
 
     &--login--button {
       font-size: 12.397px !important;
+      @include breakpoint(md) {
+        font-size: 16px !important;
+      }
     }
   }
   &__list {

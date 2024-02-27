@@ -10,6 +10,11 @@
     background-position: top center;
     position: relative;
 
+    @include breakpoint(sm) {
+        background-image: url(../../images/backgrounds/20.jpg);
+        background-size: cover;
+    }
+
     &.menuopen {
         background-color: $menu-bg;
         background-image: none;

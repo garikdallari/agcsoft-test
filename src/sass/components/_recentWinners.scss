@@ -2,6 +2,15 @@
   background-color: #131829;
   margin: 0 -16px 45px;
   position: relative;
+
+  &__wrapper {
+    overflow: hidden;
+  }
+
+  @include breakpoint(sm) {
+    max-width: 458px;
+    margin: 16px auto 32px;
+  }
   &__topBg {
     &--topBg1 {
       position: absolute;
@@ -59,7 +68,7 @@
     margin-right: 10px;
 
     &--image {
-        width: 30px;
+      width: 30px;
     }
 
     &--text {

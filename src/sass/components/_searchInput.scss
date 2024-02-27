@@ -1,5 +1,11 @@
 .input__wrapper {
   position: relative;
+
+  @include breakpoint(md) {
+    max-width: 50%;
+    margin: 0 auto;
+  }
+
   &--searchIcon {
     position: absolute;
     top: 12px;

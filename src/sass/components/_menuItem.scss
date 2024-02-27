@@ -1,7 +1,7 @@
 .menu__list--item {
   display: flex;
   align-items: center;
-  padding: 15px 16px;
+  padding: 11px 16px;
   border-radius: 8.855px;
   background: linear-gradient(
     90deg,
@@ -17,6 +17,9 @@
 
   &--img {
     position: relative;
+    width: 34px;
+    height: auto;
+    @include flex-center;
   }
 
   &--text {

@@ -1,6 +1,6 @@
 .recentWinners {
   background-color: #131829;
-  margin: 0 -16px;
+  margin: 0 -16px 45px;
   position: relative;
   &__topBg {
     &--topBg1 {
@@ -23,7 +23,9 @@
     }
   }
   &__bottomBg {
-    position: relative;
+    position: absolute;
+    bottom: -25px;
+    width: 100%;
     background-color: #05071a;
     &--bottomBg1 {
       bottom: 20px;
@@ -47,8 +49,9 @@
   }
   &__content {
     background-color: #131829;
-    padding: 6px 0;
     display: flex;
+    position: relative;
+    z-index: 10;
   }
   &__logo {
     display: flex;

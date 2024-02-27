@@ -1,5 +1,6 @@
 .welcomeBonus {
   @include flex-center;
+  position: relative;
   width: 100%;
   height: 96px;
   padding: 16px 20px 16px 8px;
@@ -11,19 +12,21 @@
   margin-bottom: 4px;
   cursor: pointer;
 
-  &.red {
-    // background-image: url(../../images/welcomeBonus/welcomeBonusBgRed.png);
-    background: linear-gradient(263deg, #dd1f41 -2.11%, #6a0c1d 100%);
-  }
-  &.purple {
-    // background-image: url(../../images/welcomeBonus/welcomeBonusBgPurple.png);
-    background: linear-gradient(256deg, #440079 -15.3%, #7b0260 61.75%);
-  }
-  &.blue {
-    // background-image: url(../../images/welcomeBonus/welcomeBonusBgBlue.png);
-    background: linear-gradient(256deg, #006379 -15.3%, #3e027b 61.75%);
+  &__bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
   }
 
+  &__content {
+    position: relative;
+    z-index: 10;
+    @include flex-center;
+    width: 100%;
+  }
+  
   &__textContent {
     margin-left: 13px;
     color: $text-yellow;
@@ -54,7 +57,7 @@
       -webkit-appearance: none;
       width: 20px;
       height: 20px;
-      background-image: url(../../images/welcomeBonus/Radio.png);
+      background-image: url(../../images/welcomeBonus/radio.png);
       background-repeat: no-repeat;
     }
     &--checkbox:checked {

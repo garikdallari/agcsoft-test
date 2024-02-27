@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import WelcomeBonus from "./WelcomeBonus";
 import HeroForm from "./HeroForm";
 import Fire from "./Fire";
-import welcomeBonusImg from "../images/welcomeBonus/welcomeBonus.png";
 import ChooseBonus from "./ChooseBonus";
+import welcomeBonusImg from "../images/welcomeBonus/welcomeBonus.png";
+import redBg from "../images/welcomeBonus/red.png";
 
 const Hero = () => {
   const [submitted, setSubmitted] = useState(false);
@@ -13,9 +14,9 @@ const Hero = () => {
     setSubmitted(true);
   };
   return (
-    <div className="hero">
+    <div className={`hero ${submitted ? "submitted" : ""}`}>
       <Fire />
-      <div className={`hero__wrapper ${submitted ? "hero--submitted" : ""}`}>
+      <div className="hero__wrapper">
         <div className="hero__title">
           <h4>DEPOSIT AND PLAY</h4>
         </div>
@@ -28,6 +29,7 @@ const Hero = () => {
               line3="+120 FreeSpins"
               className="red"
               type="arrow"
+              bgImg={redBg}
             />
             <HeroForm handleSubmit={handleSubmit} />
           </div>

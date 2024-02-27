@@ -6,7 +6,7 @@
   line-height: 140%;
 
   &__btn {
-    padding: 20px;
+    padding: 15px;
     border-radius: 111px;
     border: 2px solid #fff;
     background: $input-bg;
@@ -16,6 +16,10 @@
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
+
+    &--value {
+      height: 17px;
+    }
 
     &.active {
       border: 2px solid #FCC211;

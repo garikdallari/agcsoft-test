@@ -7,7 +7,7 @@ const SearchInput = () => {
       <div className="input__wrapper--searchIcon">
         <img src={searchImg} alt="search" />
       </div>
-      <label for="menu-search">
+      <label htmlFor="menu-search">
         <input
           className="input__wrapper--input"
           type="text"

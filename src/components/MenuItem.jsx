@@ -8,8 +8,8 @@ const MenuItem = ({ element }) => {
         {element.badge && (
           <QuantityBadge
             styles={{
-              top: "-10px",
-              right: "-5px",
+              top: "-6px",
+              right: "-4px",
               fontSize: "10px",
             }}
             quantity={element.badge}

@@ -1,11 +1,12 @@
 import Homepage from "./pages/Homepage/Homepage";
-import { useWindowHeight } from "./utils";
+// import { useWindowHeight } from "./utils";
 
 function App() {
-  const height = useWindowHeight();
+  // const height = useWindowHeight();
+
   return (
     <div className="App">
-      <div className="container" style={{ height }}>
+      <div className="container">
         <Homepage />
       </div>
     </div>

@@ -15,10 +15,6 @@
       @include flex-center;
     }
 
-    // &--action--signup {
-    //   filter: drop-shadow(0px 0px 24px rgba(255, 77, 0, 0.87));
-    // }
-
     &--action--menu {
       position: relative;
 
@@ -27,6 +23,11 @@
         top: -1.7rem;
       }
     }
+  }
+
+  &__button--signup .button__bgImg {
+    border-radius: 10px;
+    filter: drop-shadow(0px 0px 24px rgba(255, 77, 0, 0.87));
   }
 
   &__button--menu {

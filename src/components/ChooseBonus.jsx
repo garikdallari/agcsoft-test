@@ -3,6 +3,9 @@ import WelcomeBonus from "./WelcomeBonus";
 import welcomeBonusImg from "../images/welcomeBonus/welcomeBonus.png";
 import firstDepBonus from "../images/welcomeBonus/firstDepBonus.png";
 import noBonus from "../images/welcomeBonus/noBonus.png";
+import redBg from "../images/welcomeBonus/red.png";
+import purpleBg from "../images/welcomeBonus/purple.png";
+import blueBg from "../images/welcomeBonus/blue.png";
 
 const ChooseBonus = () => {
   const [checkboxes, setCheckboxes] = useState({
@@ -26,7 +29,7 @@ const ChooseBonus = () => {
         line1="Welcome bonus"
         line2="100% up to €500"
         line3="+120 FreeSpins"
-        className="red"
+        bgImg={redBg}
         checked={checkboxes.welcomebonus}
       />
       <WelcomeBonus
@@ -35,7 +38,7 @@ const ChooseBonus = () => {
         line1="First Deposit Bonus"
         line2="100% up to €500"
         line3="+120 FreeSpins"
-        className="purple"
+        bgImg={purpleBg}
         checked={checkboxes.firstdep}
       />
       <WelcomeBonus
@@ -44,7 +47,7 @@ const ChooseBonus = () => {
         line1="No Bonus"
         line2="I do not want"
         line3="a Welcome bonus"
-        className="blue"
+        bgImg={blueBg}
         checked={checkboxes.nobonus}
       />
     </div>

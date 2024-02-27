@@ -14,13 +14,13 @@ const Dropdown = ({
     <div className="heroForm__inputs--dropdown dropdown">
       <div
         className={`dropdown__btn  ${isActive ? "active" : ""}`}
-        onClick={(e) => {
+        onClick={() => {
           if (!isOtherDropdownActive) {
             setIsActive(!isActive);
           }
         }}
       >
-        <span className="dropdown__btn--value">{selected || defaultValue}</span>
+        <span className="dropdown__btn--value">{isActive ? "" : selected || defaultValue}</span>
         <span className={`dropdown__btn--arrow ${isActive ? "rotate" : ""}`}>
           <img className="dropdown__btn--arrow--img" src={down} alt="arrowdown" />
         </span>

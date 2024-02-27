@@ -9,10 +9,18 @@ const Button = ({ text, className, bgImg, type, styles, hoverBg }) => {
       style={{ ...styles }}
       onTouchStart={() => setHovering(true)}
       onTouchEnd={() => setHovering(false)}
-      onMouseEnter={() => setHovering(true)}
-      onMouseLeave={() => setHovering(false)}
+      onMouseEnter={
+        window.innerWidth > 1024 ? () => setHovering(true) : () => {}
+      }
+      onMouseLeave={
+        window.innerWidth > 1024 ? () => setHovering(false) : () => {}
+      }
     >
-      <img className="button__bgImg" src={hoverBg && hovering ? hoverBg : bgImg || bgImg} alt="button" />
+      <img
+        className="button__bgImg"
+        src={hoverBg && hovering ? hoverBg : bgImg || bgImg}
+        alt="button"
+      />
       <span className="button__text">{text}</span>
     </button>
   );

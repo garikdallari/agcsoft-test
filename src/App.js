@@ -1,8 +1,6 @@
 import Homepage from "./pages/Homepage/Homepage";
-// import { useWindowHeight } from "./utils";
 
 function App() {
-  // const height = useWindowHeight();
 
   return (
     <div className="App">

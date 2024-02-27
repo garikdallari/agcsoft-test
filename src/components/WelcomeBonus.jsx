@@ -1,34 +1,34 @@
-import React from "react";
+import React, { useState } from "react";
 import line from "../images/welcomeBonus/line.png";
 import arrow from "../images/welcomeBonus/arrow.png";
 
-const WelcomeBonus = ({
-  image,
-  line1,
-  line2,
-  line3,
-  type,
-  checked,
-  onClick,
-  bgImg
-}) => {
+const Bonus = ({ data, clickHandler, type, id }) => {
+  const [checked, setChecked] = useState(false);
+  const handleClick = (e) => {
+    if (type === "arrow") return;
+    setChecked(!checked);
+    clickHandler(e);
+  };
   return (
-    <div className="welcomeBonus" onClick={onClick}>
-      <img className="welcomeBonus__bg" src={bgImg} alt="bg" />
+    <div className="welcomeBonus" onClick={handleClick}>
+      <img className="welcomeBonus__bg" src={data.bgUrl} alt="bg" />
       <div className="welcomeBonus__content">
         <div className="welcomeBonus__image">
-          <img src={image} alt="treasure" />
+          <img src={data.imgUrl} alt="bonusImg" />
         </div>
         <div className="welcomeBonus__textContent">
           <p className="welcomeBonus__textContent--item welcomeBonus__textContent--item--highlighted">
-            {line1}
+            {data.line1}
           </p>
-          <p className="welcomeBonus__textContent--item">{line2}</p>
-          <p className="welcomeBonus__textContent--item">{line3}</p>
+          <p className="welcomeBonus__textContent--item">{data.line2}</p>
+          <p className="welcomeBonus__textContent--item">{data.line3}</p>
         </div>
         <div className="welcomeBonus__actions">
           {type === "arrow" ? (
-            <div className="welcomeBonus__actions--wrapper">
+            <div
+              className="welcomeBonus__actions--wrapper"
+              onClick={clickHandler}
+            >
               <div className="welcomeBonus__actions--img">
                 <img src={line} alt="line" />
               </div>
@@ -37,15 +37,13 @@ const WelcomeBonus = ({
               </div>
             </div>
           ) : (
-            <label htmlFor="welcomeBonus">
-              <input
-                className="welcomeBonus__actions--checkbox"
-                type="checkbox"
-                readOnly={true}
-                checked={checked}
-                id="welcomeBonus"
-              />
-            </label>
+            <input
+              id={id}
+              className="welcomeBonus__actions--checkbox"
+              type="checkbox"
+              checked={checked}
+              readOnly={true}
+            />
           )}
         </div>
       </div>
@@ -53,4 +51,4 @@ const WelcomeBonus = ({
   );
 };
 
-export default WelcomeBonus;
+export default Bonus;

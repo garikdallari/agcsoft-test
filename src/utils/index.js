@@ -1,4 +1,29 @@
-import { useLayoutEffect, useState } from "react";
+export const bonusData = [
+  {
+    id: "1",
+    line1: "Welcome bonus",
+    line2: "100% up to €500",
+    line3: "+120 FreeSpins",
+    imgUrl: "../images/welcomeBonus/welcomeBonus.png",
+    bgUrl: "../images/welcomeBonus/red.png",
+  },
+  {
+    id: "2",
+    line1: "First Deposit Bonus",
+    line2: "100% up to €500",
+    line3: "+120 FreeSpins",
+    imgUrl: "../images/welcomeBonus/firstDepBonus.png",
+    bgUrl: "../images/welcomeBonus/purple.png",
+  },
+  {
+    id: "3",
+    line1: "No Bonus",
+    line2: "I do not want",
+    line3: "a Welcome bonus",
+    imgUrl: "../images/welcomeBonus/noBonus.png",
+    bgUrl: "../images/welcomeBonus/blue.png",
+  },
+];
 
 export const countries = [
   { name: "Afghanistan", value: "Afghanistan" },
@@ -310,16 +335,3 @@ export const menuData = [
   { title: "Payment", icon: "../images/menu/payment.svg", badge: "" },
   { title: "Support", icon: "../images/menu/support.svg", badge: "" },
 ];
-
-export const useWindowHeight = () => {
-  const [height, setHeight] = useState(0);
-  useLayoutEffect(() => {
-    const updateSize = () => {
-      setHeight(window.innerHeight);
-    };
-    window.addEventListener("resize", updateSize);
-    updateSize();
-    return () => window.removeEventListener("resize", updateSize);
-  }, []);
-  return height;
-};

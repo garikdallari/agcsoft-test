@@ -6,7 +6,31 @@ html {
 *::after {
   box-sizing: inherit;
 }
-body, p, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, blockquote, th, td {
+body,
+p,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+blockquote,
+th,
+td {
   margin: 0;
   padding: 0;
 }
@@ -27,11 +51,12 @@ button {
 .App .container {
   background-color: $main-bg;
   width: 100%;
-  height: 100vh;
-  min-height: 100%;
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
+}
+.homepage__wrapper {
+  flex-grow: 1;
 }
 .hidden {
   display: none !important;

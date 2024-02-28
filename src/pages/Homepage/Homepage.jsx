@@ -15,12 +15,12 @@ const Homepage = () => {
   return (
     <div className={`homepage ${isMenuOpen ? "menuopen" : ""}`}>
       {!isMenuOpen ? (
-        <>
+        <div className="homepage__wrapper">
           <Header />
           <Hero />
           <HomepageNav />
           <RecentWinners />
-        </>
+        </div>
       ) : (
         <>
           <Menu />

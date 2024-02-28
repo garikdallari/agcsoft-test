@@ -56,6 +56,8 @@ button {
   flex-direction: column;
 }
 .homepage__wrapper {
+  display: flex;
+  flex-direction: column;
   flex-grow: 1;
   @include breakpoint(sm) {
     margin: 0 auto;

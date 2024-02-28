@@ -27,7 +27,7 @@
 
     &--arrow {
       @include flex-center;
-      transition: all 150ms ease;
+      transition: transform 150ms ease;
     }
     &--arrow.rotate {
       transform: rotate(180deg);

@@ -3,12 +3,7 @@
   align-items: center;
   padding: 11px 16px;
   border-radius: 8.855px;
-  background: linear-gradient(
-    90deg,
-    #292a37 2.37%,
-    rgba(39, 40, 48, 0.1) 68.47%,
-    rgba(39, 39, 46, 0) 100%
-  );
+  background: $menu-item-bg;
   cursor: pointer;
 
   &:not(:last-child) {

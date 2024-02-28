@@ -32,10 +32,6 @@ button {
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
-
-  @include breakpoint(sm) {
-    background-color: #000;
-  }
 }
 .hidden {
   display: none !important;

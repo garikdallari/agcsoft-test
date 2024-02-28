@@ -1,9 +1,23 @@
-$main-bg: #05071A;
-$main-text: #05071A;
-$text-white: #fff;
-$text-yellow: #FCC211;
+// Backgrounds
+$main-bg: #05071a;
 $input-bg: #e0e1ea;
-$badge-bg: #FA5926;
-$menu-bg: #32333F;
+$badge-bg: #fa5926;
+$menu-bg: #32333f;
 $button-default-yellow-bg: #fcc211;
+$hero-bg: linear-gradient(181deg, #eac80b 2.6%, #be2929 60.69%), #f00;
+$menu-item-bg: linear-gradient(
+  90deg,
+  #292a37 2.37%,
+  rgba(39, 40, 48, 0.1) 68.47%,
+  rgba(39, 39, 46, 0) 100%
+);
+
+// Text Colors
+$main-text: #05071a;
+$text-white: #fff;
+$text-yellow: #fcc211;
 $menu-item-text: #fff5d6;
+$bagde-text: #fffaf3;
+$recent-winners-bg: #131829;
+$search-input-bg: #232432;
+$search-input-text: #b1b1b1;

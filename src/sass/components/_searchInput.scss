@@ -15,15 +15,15 @@
     width: 100%;
     padding: 12px 14px 12px 44px;
     border-radius: 8.855px;
-    background: #232432;
+    background: $search-input-bg;
     border: none;
-    color: #b1b1b1;
+    color: $search-input-text;
     font-size: 14.168px;
     font-weight: 400;
     line-height: 150%;
     outline: none;
     &::placeholder {
-      color: #b1b1b1;
+      color: $search-input-text;
       font-size: 14.168px;
       font-weight: 400;
       line-height: 150%;

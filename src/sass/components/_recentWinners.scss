@@ -1,17 +1,22 @@
 .recentWinners {
-  background-color: #131829;
+  background-color: $recent-winners-bg;
   margin: 0 -16px 45px;
   position: relative;
 
-  &__wrapper {
-    overflow: hidden;
-  }
-
   @include breakpoint(sm) {
     max-width: 458px;
-    margin: 16px auto 32px;
+    margin: auto;
+    border-radius: 10px;
   }
-  
+
+  &__wrapper {
+    overflow: hidden;
+    
+    @include breakpoint(sm) {
+      border-radius: 10px;
+    }
+  }
+
   &__topBg {
     &--topBg1 {
       position: absolute;
@@ -36,7 +41,6 @@
     position: absolute;
     bottom: -25px;
     width: 100%;
-    background-color: #05071a;
     &--bottomBg1 {
       bottom: 20px;
       width: 100%;
@@ -58,7 +62,7 @@
     }
   }
   &__content {
-    background-color: #131829;
+    background-color: $recent-winners-bg;
     display: flex;
     position: relative;
     z-index: 10;

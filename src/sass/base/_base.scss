@@ -57,6 +57,9 @@ button {
 }
 .homepage__wrapper {
   flex-grow: 1;
+  @include breakpoint(sm) {
+    margin: 0 auto;
+  }
 }
 .hidden {
   display: none !important;

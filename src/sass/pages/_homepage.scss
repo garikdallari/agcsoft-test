@@ -4,16 +4,11 @@
     padding: 14px 16px 8px;
     width: 100vw;
     height: 100%;
-    background-image: url(../../images/backgrounds/95_extra_smoke_transparent_halloween1.png), url(../../images/backgrounds/147_background_introzoom_hires_halloween1.png);
+    background-image: url(../../images/backgrounds/bg.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: top center;
     position: relative;
-
-    @include breakpoint(sm) {
-        background-image: url(../../images/backgrounds/20.jpg);
-        background-size: cover;
-    }
 
     &.menuopen {
         background-color: $menu-bg;

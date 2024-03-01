@@ -5,13 +5,13 @@
 
   @include breakpoint(sm) {
     max-width: 458px;
-    margin: auto;
+    margin-top: 24px;
     border-radius: 10px;
   }
 
   &__wrapper {
     overflow: hidden;
-    
+
     @include breakpoint(sm) {
       border-radius: 10px;
     }
